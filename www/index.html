@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>ionic timer</title>
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/moment/moment.js"></script>
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+   -->
+  <!-- ionic/angularjs js -->
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+  <script src="cordova.js"></script>
+  <!-- Moment -->
+  <script src="lib/moment-duration-format/lib/moment-duration-format.js"></script>
+  <!-- rounded progrssbar for timer on player -->
+  <script src="lib/angular-svg-round-progressbar/build/roundProgress.min.js"></script>
+</head>
+<body ng-app="starter">
+  <ion-side-menus>
+    <ion-side-menu-content>
+      <ion-nav-bar class="bar-positive">
+        <ion-nav-back-button></ion-nav-back-button>
+        <ion-nav-buttons side="left">
+          <button class="button button-icon ion-navicon" menu-toggle="left"></button>
+        </ion-nav-buttons>
+      </ion-nav-bar>
+      <ion-nav-view>
+      </ion-nav-view>
+    </ion-side-menu-content>
+    <!-- Left menu -->
+    <ion-side-menu side="left">
+      <ion-list>
+          <ion-item menu-close ui-sref="Config" >Configuration</ion-item>
+          <ion-item menu-close ui-sref="History" >Historique</ion-item>
+      </ion-list>
+    </ion-side-menu>
+  </ion-side-menus>
+  <script src="js/index.js"></script>
+</body>
+</html>

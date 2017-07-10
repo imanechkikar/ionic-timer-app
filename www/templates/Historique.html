@@ -1,0 +1,19 @@
+<ion-view view-title="Historique"  ng-init="load()" cache-view="false">
+  <ion-content class="padding">
+
+
+    <div class="list">
+
+      <a class="item item-avatar" href="#" ng-repeat="config in configurations">
+        <h2>Configuration : {{config.id}}</h2>
+        <h2 >De : {{config.dateDebut|date:'EEEE, dd-MM-HH:mm:ss'}}</h2>
+
+        <h2> A : {{config.datefin|date:'EEEE, dd-MM-HH:mm:ss'}}</h2>
+
+        <h2> Statut : {{config.statut}} </h2>
+      </a>
+
+    </div>
+
+  </ion-content>
+</ion-view>
